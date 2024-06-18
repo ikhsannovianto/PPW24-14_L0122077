@@ -70,7 +70,7 @@
                                     <td class="text-center">
                                         <!-- Menampilkan gambar logo -->
                                         @if ($club->logo)
-                                        <img src="{{ asset('storage/logos/' . $club->logo) }}" alt="Logo {{ $club->nama }}" style="width: 100px; height: 100px;">
+                                        <img src="{{ asset('storage/logos/' . $club->logo) }}" alt="Logo {{ $club->nama }}" style="max-width: 100px; max-height: 100px;">
                                         @else
                                         <span class="text-muted">Tidak ada logo</span>
                                         @endif

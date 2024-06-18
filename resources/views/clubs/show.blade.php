@@ -43,7 +43,7 @@
                         <div class="col-12">
                             <h5 class="form-label text-primary">Logo Klub</h5>
                             @if ($club->logo)
-                                <img src="{{ asset('storage/' . $club->logo) }}" class="img-fluid" alt="Logo Klub">
+                                <img src="{{ asset('storage/logos/' . $club->logo) }}" alt="Logo {{ $club->nama }}" class="img-fluid" style="max-width: 100px; height: auto;">
                             @else
                                 <p>Logo tidak tersedia</p>
                             @endif
@@ -66,6 +66,7 @@
         border-radius: 20px;
         border: 1px solid rgba(0, 0, 0, 0.125);
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin-top: -50px; /* Menambahkan jarak ke atas */
     }
 
     .card-header {
